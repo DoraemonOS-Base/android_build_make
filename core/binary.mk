@@ -450,8 +450,8 @@ $(foreach lib, $(LOCAL_HAL_STATIC_LIBRARIES), \
 b_lib :=
 endif
 
-ifneq ($(strip $(CUSTOM_$(my_prefix)$(LOCAL_2ND_ARCH_VAR_PREFIX)LINKER)),)
-  my_linker := $(CUSTOM_$(my_prefix)$(LOCAL_2ND_ARCH_VAR_PREFIX)LINKER)
+ifneq ($(strip $(DORAEMON_$(my_prefix)$(LOCAL_2ND_ARCH_VAR_PREFIX)LINKER)),)
+  my_linker := $(DORAEMON_$(my_prefix)$(LOCAL_2ND_ARCH_VAR_PREFIX)LINKER)
 else
   my_linker := $($(LOCAL_2ND_ARCH_VAR_PREFIX)$(my_prefix)LINKER)
 endif
